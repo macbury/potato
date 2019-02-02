@@ -1,0 +1,6 @@
+:max_retries: 25
+:queues:
+  - default
+  - deploy
+  - pipeline
+  - builds

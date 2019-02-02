@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 25 } %>
+
+development:
+  <<: *default
+  database: potato_development
+  min_messages: debug1
+
+test:
+  <<: *default
+  database: potato_test
+
+production:
+  <<: *default
+
+staging:
+  <<: *default
+  database: potato_staging

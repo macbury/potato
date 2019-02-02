@@ -1,0 +1,9 @@
+mutation saveImage($attributes : ImageAttributes!) {
+  updateImage(attributes: $attributes){
+    image {
+      id
+    }
+
+    errors
+  }
+}

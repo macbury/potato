@@ -1,0 +1,5 @@
+subscription onStepOutput($stepId: Int!) {
+  stepOutput(id: $stepId) {
+    output
+  }
+}

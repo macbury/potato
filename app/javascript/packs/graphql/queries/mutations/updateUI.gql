@@ -1,0 +1,3 @@
+mutation updateUI($title : String!, $backButtonUrl : String) {
+  updateUI(title: $title, backButtonUrl: $backButtonUrl) @client
+}

@@ -1,0 +1,36 @@
+body, html, #application-root {
+  width: 100%;
+  height: 100%;
+}
+
+.ansi-bright-black-fg {
+  color: rgb(85, 85, 85);
+}
+
+.ansi-bright-red-fg {
+  color: rgb(255, 85, 85);
+}
+
+.ansi-bright-green-fg {
+  color: rgb(0, 255, 0);
+}
+
+.ansi-bright-yellow-fg {
+  color: rgb(255, 255, 85);
+}
+
+.ansi-bright-blue-fg {
+  color: rgb(85, 85, 255);
+}
+
+.ansi-bright-magenta-fg {
+  color: rgb(255, 85, 255);
+}
+
+.ansi-bright-cyan-fg {
+  color: rgb(85, 255, 255);
+}
+
+.ansi-bright-white-fg {
+  color: rgb(255, 255, 255);
+}

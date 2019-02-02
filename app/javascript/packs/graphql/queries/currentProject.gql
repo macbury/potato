@@ -1,0 +1,29 @@
+query($projectId: Int!, $endCursor: String) {
+  currentProject: project(id: $projectId){
+    id
+    name
+    git
+    builds(first: 15, after: $endCursor, order: Newest) {
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+      nodes {
+        number
+        id
+        status
+        message
+        sha
+        branch
+
+        startedAt
+        finishedAt
+
+        author {
+          name
+          avatarUrl
+        }
+      }
+    }
+  }
+}

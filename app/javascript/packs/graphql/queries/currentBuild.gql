@@ -1,0 +1,44 @@
+fragment ImageOwner on Image {
+  name
+  id
+}
+
+fragment PipelineOwner on Pipeline {
+  name
+  id
+}
+
+query($buildId: Int!) {
+  currentBuild: build(id: $buildId) {
+    id
+    number
+    status
+    message
+    sha
+    branch
+    startedAt
+    finishedAt
+
+    author {
+      name
+      avatarUrl
+    }
+
+    project {
+      id
+      name
+    }
+    steps {
+      id
+      status
+      command
+      output
+      group
+
+      owner {
+        ...ImageOwner
+        ...PipelineOwner
+      }
+    }
+  }
+}

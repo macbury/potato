@@ -1,0 +1,6 @@
+subscription onStepUpdate($stepId: Int!) {
+  step(id: $stepId) {
+    id
+    status
+  }
+}

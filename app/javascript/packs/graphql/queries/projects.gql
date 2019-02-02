@@ -1,0 +1,20 @@
+query($endCursor: String) {
+  projects(first: 25, after: $endCursor) {
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+    nodes {
+      name
+      id
+
+      builds(first: 1, order: Newest) {
+        nodes {
+          number
+          message
+          startedAt
+        }
+      }
+    }
+  }
+}

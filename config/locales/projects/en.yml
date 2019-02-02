@@ -1,0 +1,37 @@
+en:
+  projects:
+    select_repository: 'Select github repository'
+    create:
+      header: 'Connect Your GitHub Repository'
+      flashes:
+        success: 'Created new project!'
+    index:
+      header: Projects
+      add_project: 'Add project'
+      empty:
+        header: "Currently you don't have any projects"
+    edit:
+      flashes:
+        image:
+          success: 'Image saved successful'
+      header: 'Configure Your Tests for %{project}'
+      images:
+        add: Add image
+        setup_commands:
+          heading: Setup Commands
+          description: 'These are the commands that should be run before the tests are executed. Install database, and your language dependencies here(these commands are used to build docker image and will be cached)'
+        prepare_commands:
+          heading: Prepare Commands
+          description: 'Your project is already cloned, create database, compile assets, run migrations and install dependencies using package manager, this part is not cached and will be run every build'
+        caches:
+          heading: Caching
+          description: Caching is one of the most effective ways to make jobs faster, by reusing the data from expensive fetch operations from previous jobs. All directories are relative to application directory
+    show:
+      builds:
+        empty: 'Trigger your first build!'
+    form:
+      create:
+        repository: 'Repository'
+        name: 'Name'
+        cancel: 'Cancel'
+        button: 'Create project'

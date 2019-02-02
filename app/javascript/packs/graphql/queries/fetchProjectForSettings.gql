@@ -1,0 +1,21 @@
+query($projectId: Int!) {
+  currentProject: project(id: $projectId) {
+    id
+    name
+    git
+
+    images {
+      id
+      name
+      caches
+      buildScript
+      setupScript
+    }
+
+    pipelines {
+      id
+      name
+      script
+    }
+  }
+}

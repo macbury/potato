@@ -1,0 +1,4 @@
+en:
+  session:
+    new:
+      sign_in: 'Sign in with github'

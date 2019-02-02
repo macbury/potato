@@ -1,0 +1,3 @@
+mutation updateLocalImage($image : ImageAttributes!, $projectId: Int!) {
+  updateLocalImage(attributes: $image, projectId: $projectId) @client
+}

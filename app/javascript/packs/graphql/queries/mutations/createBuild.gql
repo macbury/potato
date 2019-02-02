@@ -1,0 +1,9 @@
+mutation createBuild($branch : String!, $sha : String, $projectId: Int!) {
+  createBuild(branch: $branch, sha: $sha, projectId: $projectId) {
+    build {
+      id
+    }
+
+    errors
+  }
+}

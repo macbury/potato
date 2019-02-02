@@ -1,0 +1,10 @@
+subscription onBuildUpdate($buildId: Int!) {
+  build(id: $buildId) {
+    status
+
+    steps {
+      id
+      status
+    }
+  }
+}

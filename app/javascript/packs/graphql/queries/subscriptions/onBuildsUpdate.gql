@@ -1,0 +1,6 @@
+subscription onBuildsUpdate {
+  build {
+    status
+    id
+  }
+}

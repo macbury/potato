@@ -1,0 +1,7 @@
+en:
+  header:
+    projects: 'Projects'
+    builds: 'Builds'
+    login: 'Login'
+    logout: 'Logout'
+    sidekiq: 'Workers'

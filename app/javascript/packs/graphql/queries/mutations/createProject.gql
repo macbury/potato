@@ -1,0 +1,10 @@
+mutation createProjectMutation($repositoryId : Int!, $name : String!) {
+  createProject(repositoryId: $repositoryId, name: $name) {
+    project {
+      name
+      id
+    }
+
+    errors
+  }
+}

@@ -1,0 +1,5 @@
+# ~/.profile: executed by Bourne-compatible login shells.
+
+. ~/.bashrc
+
+tty -s && mesg n
